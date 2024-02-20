@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "MyMusic.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MyMusic.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMusic.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MyMusic.Core/1.0.0": {
+      "type": "project",
+      "path": "../MyMusic.Core/MyMusic.Core.csproj",
+      "msbuildProject": "../MyMusic.Core/MyMusic.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "MyMusic.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/leonardowildt/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj": {
+              "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
