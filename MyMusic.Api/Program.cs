@@ -1,10 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using MyMusic.Core;
+using MyMusic.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddDbContext<MyMusicDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), x =>
+x.MigrationsAssembly("MyMusic.Data")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
