@@ -1,19 +1,25 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using MyMusic.Core;
+using MyMusic.Core.Services;
 using MyMusic.Data;
+using MyMusic.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddDbContext<MyMusicDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), x =>
 x.MigrationsAssembly("MyMusic.Data")));
 
+builder.Services.AddTransient<IMusicService, MusicService>();
+builder.Services.AddTransient<IArtistService, ArtistService>();
+// add automapper service
 
 var app = builder.Build();
 
@@ -25,6 +31,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
+app.MapControllers();
 
 var summaries = new[]
 {
