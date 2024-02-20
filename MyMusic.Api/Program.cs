@@ -5,6 +5,7 @@ using MyMusic.Core.Services;
 using MyMusic.Data;
 using MyMusic.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -20,6 +21,8 @@ x.MigrationsAssembly("MyMusic.Data")));
 builder.Services.AddTransient<IMusicService, MusicService>();
 builder.Services.AddTransient<IArtistService, ArtistService>();
 // add automapper service
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
 
 var app = builder.Build();
 
