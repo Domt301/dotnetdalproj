@@ -11,10 +11,13 @@ namespace MyMusic.Api.Mapping
             // Domain to Resource
             CreateMap<Music, MusicResource>();
             CreateMap<Artist, ArtistResource>();
-            
+
             // Resource to Domain
             CreateMap<MusicResource, Music>();
             CreateMap<ArtistResource, Artist>();
+
+            CreateMap<SaveMusicResource, Music>();
+            CreateMap<SaveArtistResource, Artist>();
         }
     }
 }

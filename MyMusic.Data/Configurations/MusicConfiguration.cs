@@ -14,7 +14,7 @@ namespace MyMusic.Data.Configurations
             builder
                 .Property(m => m.Id)
                 .UseIdentityColumn();
-                
+
             builder
                 .Property(m => m.Name)
                 .IsRequired()

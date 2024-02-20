@@ -11,7 +11,7 @@ namespace MyMusic.Data.Repositories
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly DbContext Context;
-        
+
         public Repository(DbContext context)
         {
             this.Context = context;
@@ -33,7 +33,7 @@ namespace MyMusic.Data.Repositories
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            return  await Context.Set<TEntity>().ToListAsync();
+            return await Context.Set<TEntity>().ToListAsync();
         }
 
         public ValueTask<TEntity> GetByIdAsync(int id)

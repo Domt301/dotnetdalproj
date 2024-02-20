@@ -8,7 +8,7 @@ namespace MyMusic.Data.Repositories
 {
     public class MusicRepository : Repository<Music>, IMusicRepository
     {
-        public MusicRepository(MyMusicDbContext context) 
+        public MusicRepository(MyMusicDbContext context)
             : base(context)
         { }
 
@@ -23,7 +23,7 @@ namespace MyMusic.Data.Repositories
         {
             return await MyMusicDbContext.Musics
                 .Include(m => m.Artist)
-                .SingleOrDefaultAsync(m => m.Id == id);;
+                .SingleOrDefaultAsync(m => m.Id == id); ;
         }
 
         public async Task<IEnumerable<Music>> GetAllWithArtistByArtistIdAsync(int artistId)
@@ -33,7 +33,7 @@ namespace MyMusic.Data.Repositories
                 .Where(m => m.ArtistId == artistId)
                 .ToListAsync();
         }
-        
+
         private MyMusicDbContext MyMusicDbContext
         {
             get { return Context as MyMusicDbContext; }

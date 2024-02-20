@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "lcQwzpvMyjWwXu3LxLzcKgNmw9cRG9vg0bTeLBSpA7E9l9lpY4iL9CABJ/NDsvz9a0RyeBIxQ34H/UP3lwI51Q==",
+  "dgSpecHash": "8PcQRozVybA80/2aAv49JCHAi/N1Qcc7qNsYPn3ivh/5icLdodrBdsmf9fAHTZWkOlVRW/xchcjkYSkY8PTORw==",
   "success": true,
   "projectFilePath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Api/MyMusic.Api.csproj",
   "expectedPackageFiles": [
     "/Users/leonardowildt/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/leonardowildt/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/leonardowildt/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/leonardowildt/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/Users/leonardowildt/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/leonardowildt/.nuget/packages/microsoft.aspnetcore.openapi/8.0.2/microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512",
     "/Users/leonardowildt/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

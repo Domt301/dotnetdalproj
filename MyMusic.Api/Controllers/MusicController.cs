@@ -14,30 +14,30 @@ namespace MyMusic.Api.Controllers
         private readonly IMusicService _musicService;
         private readonly IMapper _mapper;
         public MusicController(IMusicService musicService, IMapper mapper)
-{
-  this._musicService = musicService;
-    this._mapper = mapper;
-}
+        {
+            this._musicService = musicService;
+            this._mapper = mapper;
+        }
         // GET: api/music
-[HttpGet("")]
-public async Task<ActionResult<IEnumerable<Music>>> GetAllMusics()
+        [HttpGet("")]
+        public async Task<ActionResult<IEnumerable<Music>>> GetAllMusics()
         {
             // TODO: Implement logic to retrieve music data
-  var musics = await _musicService.GetAllWithArtist();
-  var musicResources = _mapper.Map<IEnumerable<Music>, IEnumerable<MusicResource>>(musics);
+            var musics = await _musicService.GetAllWithArtist();
+            var musicResources = _mapper.Map<IEnumerable<Music>, IEnumerable<MusicResource>>(musics);
 
-  return Ok(musicResources);
+            return Ok(musicResources);
         }
 
         // GET: api/music/{id}
-[HttpGet("{id}")]
-public async Task<ActionResult<MusicResource>> GetMusicById(int id)
-{
-    var music = await _musicService.GetMusicById(id);
-    var musicResource = _mapper.Map<Music, MusicResource>(music);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<MusicResource>> GetMusicById(int id)
+        {
+            var music = await _musicService.GetMusicById(id);
+            var musicResource = _mapper.Map<Music, MusicResource>(music);
 
-    return Ok(musicResource);
-}
+            return Ok(musicResource);
+        }
 
         // POST: api/music
         [HttpPost]

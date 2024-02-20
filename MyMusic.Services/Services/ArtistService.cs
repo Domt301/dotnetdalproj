@@ -18,7 +18,7 @@ namespace MyMusic.Services
         {
             await _unitOfWork.Artists
                 .AddAsync(newArtist);
-            
+
             return newArtist;
         }
 

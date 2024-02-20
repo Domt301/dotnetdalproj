@@ -15,7 +15,7 @@ namespace MyMusic.Data.Migrations
                 .Sql("INSERT INTO Artists (Name) Values ('Flogging Molly')");
             migrationBuilder
                 .Sql("INSERT INTO Artists (Name) Values ('Red Hot Chilli Peppers')");
-                
+
             migrationBuilder
                 .Sql("INSERT INTO Musics (Name, ArtistId) Values ('In The End', (SELECT Id FROM Artists WHERE Name = 'Linkin Park'))");
             migrationBuilder

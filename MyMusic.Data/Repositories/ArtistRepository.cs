@@ -8,10 +8,10 @@ namespace MyMusic.Data.Repositories
 {
     public class ArtistRepository : Repository<Artist>, IArtistRepository
     {
-        public ArtistRepository(MyMusicDbContext context) 
+        public ArtistRepository(MyMusicDbContext context)
             : base(context)
         { }
-        
+
         public async Task<IEnumerable<Artist>> GetAllWithMusicsAsync()
         {
             return await MyMusicDbContext.Artists
