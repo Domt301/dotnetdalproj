@@ -1,6 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using MyMusic.Api.Resources;
+using MyMusic.Api.Validations;
 using MyMusic.Core.Models;
 using MyMusic.Core.Services;
 using System.Collections.Generic;
@@ -40,26 +41,67 @@ namespace MyMusic.Api.Controllers
         }
 
         // POST: api/music
-        [HttpPost]
-        public IActionResult Post([FromBody] string song)
+        [HttpPost("")]
+        public async Task<ActionResult<MusicResource>> CreateMusic([FromBody] SaveMusicResource saveMusicResource)
         {
-            // TODO: Implement logic to add a new song
-            return CreatedAtAction(nameof(Get), new { id = 4 }, song);
+            var validator = new SaveMusicResourceValidator();
+            var validationResult = await validator.ValidateAsync(saveMusicResource);
+
+            if (!validationResult.IsValid)
+                return BadRequest(validationResult.Errors); // this needs refining, but for demo it is ok
+
+            var musicToCreate = _mapper.Map<SaveMusicResource, Music>(saveMusicResource);
+
+            var newMusic = await _musicService.CreateMusic(musicToCreate);
+
+            var music = await _musicService.GetMusicById(newMusic.Id);
+
+            var musicResource = _mapper.Map<Music, MusicResource>(music);
+
+            return Ok(musicResource);
         }
 
         // PUT: api/music/{id}
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] string song)
+        public async Task<ActionResult<MusicResource>> UpdateMusic(int id, [FromBody] SaveMusicResource saveMusicResource)
         {
-            // TODO: Implement logic to update a specific song by ID
-            return NoContent();
+            var validator = new SaveMusicResourceValidator();
+            var validationResult = await validator.ValidateAsync(saveMusicResource);
+
+            var requestIsInvalid = id == 0 || !validationResult.IsValid;
+
+            if (requestIsInvalid)
+                return BadRequest(validationResult.Errors); // this needs refining, but for demo it is ok
+
+            var musicToBeUpdate = await _musicService.GetMusicById(id);
+
+            if (musicToBeUpdate == null)
+                return NotFound();
+
+            var music = _mapper.Map<SaveMusicResource, Music>(saveMusicResource);
+
+            await _musicService.UpdateMusic(musicToBeUpdate, music);
+
+            var updatedMusic = await _musicService.GetMusicById(id);
+            var updatedMusicResource = _mapper.Map<Music, MusicResource>(updatedMusic);
+
+            return Ok(updatedMusicResource);
         }
 
         // DELETE: api/music/{id}
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteMusic(int id)
         {
-            // TODO: Implement logic to delete a specific song by ID
+            if (id == 0)
+                return BadRequest();
+
+            var music = await _musicService.GetMusicById(id);
+
+            if (music == null)
+                return NotFound();
+
+            await _musicService.DeleteMusic(music);
+
             return NoContent();
         }
     }
