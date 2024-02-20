@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using MyMusic.Core;
 using MyMusic.Data;
 
@@ -12,6 +13,8 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddDbContext<MyMusicDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), x =>
 x.MigrationsAssembly("MyMusic.Data")));
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
