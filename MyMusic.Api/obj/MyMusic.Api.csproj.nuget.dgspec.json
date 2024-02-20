@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Api/MyMusic.Api.csproj": {}
+    "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Api/MyMusic.Api.csproj": {}
   },
   "projects": {
-    "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Api/MyMusic.Api.csproj": {
+    "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Api/MyMusic.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Api/MyMusic.Api.csproj",
+        "projectUniqueName": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Api/MyMusic.Api.csproj",
         "projectName": "MyMusic.Api",
-        "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Api/MyMusic.Api.csproj",
-        "packagesPath": "/Users/leonardowildt/.nuget/packages/",
-        "outputPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Api/obj/",
+        "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Api/MyMusic.Api.csproj",
+        "packagesPath": "/Users/leonardo.wildt/.nuget/packages/",
+        "outputPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/leonardowildt/.nuget/NuGet/NuGet.Config"
+          "/Users/leonardo.wildt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,14 +26,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj": {
-                "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj"
+              "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj": {
+                "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj"
               },
-              "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Data/MyMusic.Data.csproj": {
-                "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Data/MyMusic.Data.csproj"
+              "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Data/MyMusic.Data.csproj": {
+                "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Data/MyMusic.Data.csproj"
               },
-              "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Services/MyMusic.Services.csproj": {
-                "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Services/MyMusic.Services.csproj"
+              "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Services/MyMusic.Services.csproj": {
+                "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Services/MyMusic.Services.csproj"
               }
             }
           }
@@ -42,11 +42,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -95,21 +90,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj": {
+    "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj",
+        "projectUniqueName": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj",
         "projectName": "MyMusic.Core",
-        "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj",
-        "packagesPath": "/Users/leonardowildt/.nuget/packages/",
-        "outputPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/obj/",
+        "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj",
+        "packagesPath": "/Users/leonardo.wildt/.nuget/packages/",
+        "outputPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/leonardowildt/.nuget/NuGet/NuGet.Config"
+          "/Users/leonardo.wildt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -127,11 +122,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -153,21 +143,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Data/MyMusic.Data.csproj": {
+    "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Data/MyMusic.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Data/MyMusic.Data.csproj",
+        "projectUniqueName": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Data/MyMusic.Data.csproj",
         "projectName": "MyMusic.Data",
-        "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Data/MyMusic.Data.csproj",
-        "packagesPath": "/Users/leonardowildt/.nuget/packages/",
-        "outputPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Data/obj/",
+        "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Data/MyMusic.Data.csproj",
+        "packagesPath": "/Users/leonardo.wildt/.nuget/packages/",
+        "outputPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/leonardowildt/.nuget/NuGet/NuGet.Config"
+          "/Users/leonardo.wildt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -179,8 +169,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj": {
-                "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj"
+              "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj": {
+                "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj"
               }
             }
           }
@@ -189,11 +179,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -210,7 +195,7 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.2, )"
             }
@@ -231,21 +216,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Services/MyMusic.Services.csproj": {
+    "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Services/MyMusic.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Services/MyMusic.Services.csproj",
+        "projectUniqueName": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Services/MyMusic.Services.csproj",
         "projectName": "MyMusic.Services",
-        "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Services/MyMusic.Services.csproj",
-        "packagesPath": "/Users/leonardowildt/.nuget/packages/",
-        "outputPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Services/obj/",
+        "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Services/MyMusic.Services.csproj",
+        "packagesPath": "/Users/leonardo.wildt/.nuget/packages/",
+        "outputPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Services/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/leonardowildt/.nuget/NuGet/NuGet.Config"
+          "/Users/leonardo.wildt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -257,8 +242,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj": {
-                "projectPath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj"
+              "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj": {
+                "projectPath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj"
               }
             }
           }
@@ -267,11 +252,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -293,7 +273,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

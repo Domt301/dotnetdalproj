@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uaf24LZZNwKkIRzkn+GO7fGMdPpcjNXwJqXfawMj3X0SMrMQD3O2Y5rIrwBF9XRRncRJNIhTGNp+bY9trH9tdQ==",
+  "dgSpecHash": "YmQvVa+k+hBRXgevxOgl4sNBrSJvQ3fPny7YKuXIVO0oV8knneygeCbtQpp0J/XvwCZvigCeD8NCKp2LZWzpiQ==",
   "success": true,
-  "projectFilePath": "/Users/leonardowildt/Documents/LeosCode/dotnet/MyMusic/MyMusic.Core/MyMusic.Core.csproj",
+  "projectFilePath": "/Users/leonardo.wildt/Documents/LeosCode/dotnetdalproj/MyMusic.Core/MyMusic.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

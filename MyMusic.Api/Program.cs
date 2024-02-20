@@ -15,7 +15,9 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddDbContext<MyMusicDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), x =>
+// options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), x =>
+// x.MigrationsAssembly("MyMusic.Data")));
+options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection"), x =>
 x.MigrationsAssembly("MyMusic.Data")));
 
 builder.Services.AddTransient<IMusicService, MusicService>();
