@@ -12,6 +12,10 @@ namespace MyMusic.Core.Models
 
         public int Id { get; set; }
         public string Name { get; set; }
+        
+        public string Age { get; set; }
+
+        public string city { get; set; }
         public ICollection<Music> Musics { get; set; }
     }
 }
